@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(166 161 161 / 13%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* :where(.css-dev-only-do-not-override-1ij74fp).ant-input,
+.css-dev-only-do-not-override-1ij74fp
+  .ant-select-single
+  .ant-select-selector
+  .ant-select-selection-search-input {
+  width: 80% !important;
+} */
+* {
+  border-radius: 1px !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-pagination-item-link {
+  transform: rotate(180deg);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:where(.css-dev-only-do-not-override-1ij74fp).ant-pagination
+  .ant-pagination-item {
+  background-color: white !important;
+  border: 1px solid rgba(100, 99, 99, 0.13) !important;
+  border-radius: 6px !important;
 }
-
-.App-link {
-  color: #61dafb;
+:where(.css-dev-only-do-not-override-1ij74fp).ant-pagination
+  .ant-pagination-item-active {
+  border-color: #16b9ff !important;
+  color: #16b9ff !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:where(.css-dev-only-do-not-override-1ij74fp).ant-pagination .ant-pagination-options {
+    display: none;
+    margin-inline-start: 16px;
+    vertical-align: middle;
 }
